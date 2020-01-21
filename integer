@@ -1,0 +1,20 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Expresions_integer_9_Kokhan {
+    public static void main(String[] args){
+
+        //Дано тризначне число
+        //Введіть число сотень
+
+        Scanner in = new Scanner(System.in);
+
+        System.out.println("Введіть тризначне число : ");
+        int number = in.nextInt();
+        int numb = number / 100;
+
+        System.out.println("Кількість сотень дорівнює  "+ Math.round(numb));
+
+    }
+}
