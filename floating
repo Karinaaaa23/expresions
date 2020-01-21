@@ -1,0 +1,23 @@
+package com.company;
+
+import java.util.Scanner;
+
+public class Expresions_floating_9_Kokhan {
+
+    public static void main(String[] args) {
+        //Дано числа а і b з ваговими коефіцієнтами Wa i Wb
+        //Знайти їх середнє зважене за формулою
+
+        Scanner in = new Scanner(System.in);
+        System.out.println("Вагові коефіцієнти відповідно дорівнюють Wa=0.1 i Wb=0.3  ");
+
+	    System.out.println("Введіть число а :");
+	    int a = in.nextInt();
+
+        System.out.println("Введіть число b :");
+        int b = in.nextInt();
+
+        double c = (a*0.1 + b*0.3)/(0.1+0.3);
+        System.out.println("Середнє зважене дорівнює :" + c);
+    }
+}
