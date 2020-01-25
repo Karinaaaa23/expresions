@@ -1,0 +1,49 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Expresions_bitwise_9_Kokhan
+{
+    class Program
+    {
+        // Дано числа А і В
+        // Перевірити істинність висловлюваня "Жодне з чисел А і В - непарне"
+
+        static void Main(string[] args)
+        {
+            Console.Title = "Expresions_boolean_9_Kokhan";
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.OutputEncoding = Encoding.Unicode;
+
+            Console.WriteLine("Введіть число A :");
+            int numb1 = Convert.ToInt32(Console.ReadLine());
+
+            Console.WriteLine("Введіть число B :");
+            int numb2 = Convert.ToInt32(Console.ReadLine());
+
+            if (numb1 % 2 == 1 && numb2 % 2 == 1)
+            {
+                Console.WriteLine("Buсловювання хибне!");
+            }
+
+            else if (numb1 % 2 != 0 && numb2 % 2 == 0)
+            {
+                Console.WriteLine("Buсловювання хибне!");
+            }
+
+            else if (numb1 % 2 == 0 && numb2 % 2 != 0)
+            {
+                Console.WriteLine("Висловювання хибне!");
+            }
+
+            else Console.WriteLine("Висловювання істинне! Жодне з чисел А і В - непарне!");
+
+
+            Console.ReadKey(true);
+        }
+    }    
+}
