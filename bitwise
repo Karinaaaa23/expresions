@@ -1,0 +1,35 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+
+namespace Expresions_boolean_9_Kokhan
+{
+    class Program
+    {
+        // Дано число Х
+        // Виділити в числі крайній справа нульовий біт ,якщо він є (~X & (X+1))
+
+        static void Main(string[] args)
+        {
+            Console.Title = "Expresions_bitwise_9_Kokhan";
+            Console.BackgroundColor = ConsoleColor.White;
+            Console.Clear();
+            Console.ForegroundColor = ConsoleColor.Black;
+            Console.OutputEncoding = Encoding.Unicode;
+
+            Console.WriteLine("Введіть число Х :");
+            int x = Convert.ToInt16(Console.ReadLine());
+
+            Console.WriteLine("В двійковому форматі: {0}", Convert.ToString(x, 2));
+            int a = ( ~x & (x + 1));
+            Console.Write("Сконвертоване число в двійковому форматі: {0}", Convert.ToString(a % 2, 2));
+
+            
+
+            Console.ReadKey(true);
+        }
+    }
+}
+
